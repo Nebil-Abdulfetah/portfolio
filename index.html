@@ -3,135 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nebil Abdulfetah</title>
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="./css/styles.css" />    
+    <title>Nebil</title>
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
     <header>
+      <nav class="nav-bar section-content">
+        <div id="logo"><a href="#">Nebil</a></div>
+        <ul class="nav-item-list">
+          <div id="menu-close-button" class="fas fa-times"></div>
+          <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+        </ul>
+        <div id="menu-open-button" class="fa-solid fa-bars"></div>
+      </nav>
+      <!-- menu button -->
     </header>
-
     <main>
       <section class="hero-section">
-        <div class="details-container">
-          <h1>
-            Hi, I'm a full-stack web
-            <div id="animated-text">Developer</div>
-          </h1>
-          <p>
-            I'm a software engineer specializing in scalable web apps. Explore
-            my <a href="#">blog</a>, <a href="#">project portfolio</a> and
-            <a href="#">online resume</a>.
-          </p>
-          <div class="button-container">
-            <button>
-              <i class="ph ph-arrow-right"></i><span>View Portfolio</span>
-            </button>
-            <button class="view-resume">
-              <img
-                class="view-resume-icon"
-                src="./img/resume-icon.png"
-                alt="resume icon"
-              />View Resume
-            </button>
-          </div>
-        </div>
-        <div id="hero-img-container">
-          <img src="./img/Hero.png" alt="" id="hero-img" width="326px" height="398px"/>
-      </section>
-
-
-      <section class="skills-section">
-        <div class="skills-details">
-          <div class="details">
-            <h2>What I do</h2>
-            <p>
-              I have more than 10 years' experience building software for clients
-              all over the world. Below is a quick overview of my main technical
-              skill sets and technologies I use. Want to find out more about my
-              experience? Check out my <a href="#">online resume</a> and
-              <a href="#">project portfolio</a>.
+        <div class="section-content">
+          <div class="hero-details">
+            <h1 class="hero-name">Nebil Abdulfetah</h1>
+            <p class="hero-description">
+              I'm a full-stack web developer who loves turning ideas into interactive experiences. Let's build something amazing together!
             </p>
+            <div class="button-container">
+              <a href="#" class="button contact-me">Contact Me</a>
+              <a href="#" class="button download-cv">Download CV</a>
+            </div>
+            <ul class="social-link-list">
+              <li class="social-list">
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+              </li>
+              <li class="social-list">
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </li>
+              <li class="social-list">
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="social-list">
+                <a href="#" class="social-link"
+                  ><i class="fa-brands fa-x-twitter"></i
+                ></a>
+              </li>
+            </ul>
           </div>
-        <div class="button-container">
-          <button><i class="ph ph-arrow-right"></i>Service & Pricing</button>
-        </div>
-      </div> 
-        <div class="skills-list-container">
-          <ul class="skills-list">
-            <li  class="skill">
-              <div class="skill-img-container">
-                <img src="./img/html-logo.png" alt="HTML logo" />
-                <img src="./img/css-logo.png" alt="CSS logo" />
-              </div>
-              <div class="skill-description">
-                <h3>HTML & CSS</h3>
-                <p>
-                  List skills and technologies here. Customize as needed. Built
-                  on HTML5, Sass, and Bootstrap 5.
-                </p>
-              </div>
-            </li>
-            
-            <li class="skill">
-              <div class="skill-img-container">
-                <img src="./img/js-logo.png" alt="JavaScript logo" />
-              </div>
-              <div class="skill-details">
-                <h3>JavaScript</h3>
-                <p>
-                  List skills and technologies here. Customize as needed. Built
-                  on HTML5, Sass, and Bootstrap 5.
-                </p>
-              </div>
-            </li>
-            <li class="skill">
-              <div class="skill-img-container">
-                <img src="./img/node-logo.png" alt="HTML logo" />
-              </div>
-              <div class="skill-details">
-                <h3>Node.js</h3>
-                <p>
-                  List skills and technologies here. Customize as needed. Built
-                  on HTML5, Sass, and Bootstrap 5.
-                </p>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-
-
-      <section class="call-to-action">
-        <div class="details-container">
-          <h2>Let's Work together on your next Project</h2>
-          <p>
-            I am available for freelance projects. Hire me and get your project
-            done
-          </p>
-          <div class="button-container">
-            <button><i class="ph ph-arrow-right"></i>Let's get in touch</button>
+          <div class="hero-img-wrapper">
+            <img
+              src="img/profile_pic-removebg (1).png"
+              alt=""
+              class="hero-img"
+            />
           </div>
         </div>
       </section>
 
 
-      <section class="projects">
-        <div class="details-container">
-          <h2>Featured Projects</h2>
-          <p>
-            My step-by-step guide ensures a smooth project journey, from the
-            initial consultation to the final delivery. I take care of every
-            detail, allowing you to focus on what you do best.
-          </p>
-          <div class="button-container">
-            <button><i class="ph ph-arrow-right"></i>View Portfolio</button>
-          </div>
-        </div>
-        <div>Projects Will soon be available</div>
-    <!-- Add testimonials section in future -->
-  </main>
-    <footer>Copyright © 2024 Portfolify. All Rights Reserved.</footer>
-    <script src="js/script.js"></script>
+      <script src="js/script.js"></script>
+    </main>
   </body>
 </html>

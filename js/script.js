@@ -1,7 +1,8 @@
-  // window.onbeforeunload = function () {
-//   window.scrollTo(0, 0);
-// };
-fetch("nav.html")
-  .then((response) => response.text())
-  .then((data) => (document.querySelector("header").innerHTML = data))
-  .catch((error) => console.error("Error loading navbar:", error));
+const menuOpenButton = document.querySelector('#menu-open-button');
+const menuCloseButton = document.querySelector('#menu-close-button');
+
+menuOpenButton.addEventListener("click", () => {
+    document.body.classList.toggle("show-menu");
+})
+
+menuCloseButton.addEventListener("click", () => menuOpenButton.click());
