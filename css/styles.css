@@ -53,7 +53,34 @@ a {
   padding: 0 20px;
   max-width: var(--site-max-width);
 }
+.section-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  text-align: center;
+  font-family: "Orbitron", serif;
+  /* margin: 0 0 20px; */
+}
+.section-title::after {
+  content: "";
+  width: 90px;
+  height: 5px;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: var(--border-radius-s);
+  background-color: var(--primary-color);
+}
+.curved-divider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
 
+.curved-divider svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /**********************
   Header/Navigation 
 ***********************/
@@ -149,17 +176,16 @@ header {
   Hero Section 
 ***********************/
 .hero-section {
-  min-height: 90vh;
+  /* min-height: 80vh; */
   background-color: var(--dark-color);
   color: var(--white-color);
-  padding: 50px 0 100px;
+  padding: 50px 0 0;
 }
 .hero-section .section-content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column-reverse;
-  /* gap: 10px; */
   min-height: 90vh;
 }
 .hero-img-wrapper {
@@ -256,14 +282,52 @@ header {
   }
 }
 /**********************
-  Hero Section 
+  About Section 
 ***********************/
+.about-section {
+  padding: 50px 0 100px;
+  background-color: var(--white-color);
+}
+.about-section .section-content {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+}
+.about-img-wrapper{
+  margin-inline: auto;
+  width: 400px;
+}
+.about-details {
+  margin: 30px 0;
+  max-width: 90%;
+  margin-inline: auto;
+  margin: 10px 0 40px;
+}
+.about-details p {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  line-height: 1.8;
+}
+.section-subtitle {
+  color: var(--primary-color);
+  font-weight: var(--font-weight-semibold);
+  font-size: var(--font-size-l);
+}
+/* Medium Screens (Laptops) */
+@media (min-width: 1024px) {
+  .about-section .section-content {
+    flex-direction: row;
+    gap: 30px;
 
-
-
-
-
-
+  }
+  .about-details {
+    max-width: 700px;
+  }
+}
+@media (min-width: 768px) {
+  
+}
 
 
 /**********************
@@ -282,11 +346,6 @@ header {
 /* Small Screens (Tablets) */
 @media (min-width: 768px) {
 }
-
-/* Medium Screens (Laptops) */
-@media (min-width: 1024px) {
-}
-
 /* Large Screens (Desktops) */
 @media (min-width: 1280px) {
 }
